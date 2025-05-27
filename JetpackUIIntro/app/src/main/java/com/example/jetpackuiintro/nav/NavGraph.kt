@@ -13,7 +13,7 @@ fun NavGraph() {
     NavHost(navController, startDestination = "welcome") {
         composable("welcome") { WelcomeScreen(navController) }
         composable("components") { ComponentListScreen(navController) }
-        composable("text") { TextScreen() }
+        composable("text") { TextScreen(navController) }
         composable("image") { ImageScreen() }
         composable("textfield") { TextFieldScreen() }
         composable("passwordfield") { PasswordFieldScreen() }
